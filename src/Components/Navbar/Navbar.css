@@ -1,0 +1,12 @@
+.nav-link:hover{
+    color: rgb(7, 7, 7);
+}
+.navBtn{
+    background-color: rgb(173, 172, 172);
+    border-radius: 30px;
+    color: black;
+}
+.navBtn:hover{
+    background-color: grey;
+    color: white;
+}

@@ -6,6 +6,8 @@ import AboutMe from "./Pages/AboutMe"
 import ContactMe from "./Pages/ContactMe"
 import ProjectList from "./Pages/ProjectList"
 import Footer from './Components/Footer/Footer'
+import "@fortawesome/fontawesome-free/css/all.min.css";
+
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";

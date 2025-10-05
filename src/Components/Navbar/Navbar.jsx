@@ -1,34 +1,36 @@
 import React from 'react'
 import {Link} from "react-router-dom"
+import logoImg from '../../assets/logo.png'
+import './Navbar.css'
 
 
 const navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
   <div className="container-fluid px-5">
-<Link className="navbar-brand fw-bolder" href="#">RMHC</Link>
+    <img src={logoImg} alt=""  style={{width: "130px", height: "50px"}}/>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
       
-      <ul className="navbar-nav">
+      <ul className="navbar-nav gap-2">
         <li className="nav-item">
-          <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+          <Link className="nav-link fw-bold me-3" aria-current="page" to="/">Home</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/project">Project</Link>
+          <Link className="nav-link fw-bold me-3" to="/project">Project</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/contact-me">Contact Us</Link>
+          <Link className="nav-link fw-bold me-3" to="/contact-me">Contact Us</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/about">About</Link>
+          <Link className="nav-link fw-bold me-3" to="/about">About</Link>
         </li>
       </ul>
     </div>
           <div className="d-none d-xs-none d-md-block">
-          <button className="btn btn-outline-primary rounded-1 ">
+          <button className="btn navBtn">
             Get started
           </button>
         </div>

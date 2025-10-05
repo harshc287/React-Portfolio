@@ -1,19 +1,12 @@
 import React from 'react'
-import userImg from '../../assets/UserImg.png'
-import heroImg from '../../assets/HeroBgImg.jpg'
+import userImg from '../../assets/UserImg.png';
+import './hero.css'; 
+
 
 const hero = () => {
   return (
-  <div
-        className="container-fluid m-0 p-0 position-relative"
-        style={{
-          backgroundImage: `url(${heroImg})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          height: "90vh",
-        }}
-      >
-        <div className="row align-items-center h-100  p-4">
+  <div className="container-fluid m-0 p-0 position-relative overflow-hidden hero-section">
+        <div className="row align-items-center h-100 p-4">
           <div className="col-12 col-md-6 text-center text-md-start">
             <h1 className="display-3">
               Hi ✋ I'm <span className="text-primary fw-bolder">Harsh</span>
