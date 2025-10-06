@@ -1,7 +1,6 @@
 import React from 'react'
 import {Link} from "react-router-dom"
 import logoImg from '../../assets/logo.png'
-import './Navbar.css'
 
 
 const navbar = () => {
@@ -14,23 +13,23 @@ const navbar = () => {
     </button>
     <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
       
-      <ul className="navbar-nav gap-2">
+      <ul className="navbar-nav gap-2 ">
         <li className="nav-item">
-          <Link className="nav-link fw-bold me-3" aria-current="page" to="/">Home</Link>
+          <Link className="nav-link fw-bold me-3 hoverC" aria-current="page" to="/">Home</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link fw-bold me-3" to="/project">Project</Link>
+          <Link className="nav-link fw-bold me-3 hoverC" to="/project">Project</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link fw-bold me-3" to="/contact-me">Contact Us</Link>
+          <Link className="nav-link fw-bold me-3 hoverC" to="/contact-me">Contact Us</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link fw-bold me-3" to="/about">About</Link>
+          <Link className="nav-link fw-bold me-3 hoverC" to="/about">About</Link>
         </li>
       </ul>
     </div>
           <div className="d-none d-xs-none d-md-block">
-          <button className="btn navBtn">
+          <button className="btn-dark navBtn">
             Get started
           </button>
         </div>
