@@ -3,7 +3,7 @@ import Navbar from "./Components/Navbar/Navbar"
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import HomePage from "./Pages/HomePage"
 import AboutMe from "./Pages/AboutMe"
-import ContactMe from "./Pages/ContactMe"
+import ContactMe from "./Pages/ContactPage"
 import ProjectList from "./Pages/ProjectList"
 import Footer from './Components/Footer/Footer'
 import '@fortawesome/react-fontawesome'
@@ -22,7 +22,6 @@ const App = () => {
         <Route path='/contact-me' element={<ContactMe/>}/>
         <Route path='/project' element={<ProjectList/>}/>
       </Routes>
-      <AboutMe/>
       <Footer/>
     </BrowserRouter>
   )
