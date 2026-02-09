@@ -1,140 +1,55 @@
-/* Hero.css Additional Styles */
-
-.text-gradient {
-  background: var(--gradient-primary);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.text-gradient-primary {
-  color: var(--primary-color);
-  letter-spacing: 2px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.hover-lift {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.hover-lift:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
-}
-
-.icon-wrapper {
-  transition: transform 0.3s ease;
-}
-
-.hover-lift:hover .icon-wrapper {
-  transform: scale(1.1);
-}
-
-.hover-link {
-  position: relative;
-  padding-bottom: 2px;
-}
-
-.hover-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: var(--gradient-primary);
-  transition: width 0.3s ease;
-}
-
-.hover-link:hover::after {
-  width: 100%;
-}
-
-/* Floating Animation */
+/* Hero Animations */
 @keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
 }
 
-.floating-element {
+@keyframes orbit {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.floating-icon {
   position: absolute;
-  width: 20px;
-  height: 20px;
-  animation: float 3s ease-in-out infinite;
+  animation: float 6s ease-in-out infinite;
 }
 
-.element-1 {
-  top: 20%;
-  left: 10%;
-  animation-delay: 0s;
-}
-
-.element-2 {
-  top: 60%;
-  right: 15%;
-  width: 15px;
-  height: 15px;
-  animation-delay: 1s;
-}
-
-.element-3 {
-  bottom: 30%;
-  right: 10%;
-  width: 10px;
-  height: 10px;
-  animation-delay: 2s;
-}
-
-/* Scroll Indicator */
-.scroll-indicator {
-  text-align: center;
-}
-
-.mouse {
-  width: 30px;
-  height: 50px;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  border-radius: 20px;
-  position: relative;
-  margin: 0 auto;
-}
-
-.wheel {
-  width: 4px;
-  height: 8px;
-  background: white;
-  border-radius: 2px;
+.orbit {
   position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  animation: scroll 2s infinite;
+  border: 2px dashed rgba(99, 102, 241, 0.3);
+  border-radius: 50%;
 }
 
-@keyframes scroll {
-  0% {
-    opacity: 1;
-    transform: translateX(-50%) translateY(0);
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(-50%) translateY(20px);
-  }
+.orbit-1 {
+  width: 300px;
+  height: 300px;
+  animation: orbit 20s linear infinite;
 }
 
-/* Typing Animation */
-.typed-text {
+.orbit-2 {
+  width: 200px;
+  height: 200px;
+  animation: orbit 15s linear infinite reverse;
+}
+
+.orbit-3 {
+  width: 100px;
+  height: 100px;
+  animation: orbit 10s linear infinite;
+}
+
+.central-dot {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  border-radius: 50%;
   position: relative;
+  z-index: 2;
 }
 
-.typed-text::after {
-  content: '|';
+.blinking-cursor {
   animation: blink 1s infinite;
+  color: #8b5cf6;
 }
 
 @keyframes blink {

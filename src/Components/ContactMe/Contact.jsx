@@ -124,7 +124,7 @@ function ContactMe() {
                   <FontAwesomeIcon icon={faEnvelope} className="text-primary fs-4" />
                 </div>
                 <h5 className="fw-bold">Email</h5>
-                <p className="text-muted mb-0">harsh@example.com</p>
+                <p className="text-muted mb-0">chouhanharsh332@gmail.com</p>
               </div>
             </div>
             <div className="col-md-4">
