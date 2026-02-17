@@ -19,9 +19,9 @@ const Navbar = () => {
   ];
 
   const socialLinks = [
-    { icon: faGithub, url: "https://github.com/yourusername", label: "GitHub" },
-    { icon: faLinkedin, url: "https://linkedin.com/in/yourusername", label: "LinkedIn" },
-    { icon: faTwitter, url: "https://twitter.com/yourusername", label: "Twitter" }
+    { icon: faGithub, url: "https://github.com/harshc287", label: "GitHub" },
+    { icon: faLinkedin, url: "https://www.linkedin.com/in/harsh-chouhan-b5aa1329a/", label: "LinkedIn" }
+    
   ];
 
   const isActive = (path) => {
